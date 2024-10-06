@@ -1,5 +1,6 @@
 .hero {
-  background: url(../../assets/images/hero-bg-transparent.png), url(../../assets/images/hero-mobile.png);
+  background: url(../../assets/images/hero-bg-transparent.png),
+    url(../../assets/images/hero-mobile.png);
   height: calc(100vh - (48px + 30px));
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,17 +10,35 @@
 
   &__wrapper {
     height: inherit;
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
   &__title {
     font-size: $text-h1;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: center;
   }
-  
+
   &__info {
     margin-top: 28px;
   }
+  &__title__br{
+    display: none ;
+  }
 }
 
+@include mobile-large {
+  .hero__title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.2px;
+    text-align: center;
+  }
+  .hero__title__br{
+    display: block;
+  }
+}
