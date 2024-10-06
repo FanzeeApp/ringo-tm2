@@ -1,0 +1,367 @@
+.cardsection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  h1 {
+    margin: 50px 0;
+    color: rgb(40, 43, 34);
+    font-family: Raleway;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 59px;
+    .cardsfull {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 100px;
+      .cardnumbers {
+        color: rgb(61, 74, 57);
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+      .cardtexts {
+        color: rgb(61, 74, 57);
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.fnzsection {
+  width: 100%;
+  background: #3d4a39;
+  height: auto;
+  .fnzcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 72px;
+    .bosh-text {
+      padding-top: 100px;
+      font-family: Raleway;
+      font-size: 46px;
+      font-weight: 600;
+      line-height: 57.5px;
+      text-align: left;
+      color: #ffffff;
+    }
+    .cardicons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 174px;
+    }
+    .cardpadding {
+      padding-bottom: 100px;
+    }
+    .cardicon {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 270px;
+      height: 124px;
+      .ftext {
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 31.2px;
+        text-align: left;
+        color: #ffffff;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+/*RM*/
+
+// orasiga yozing
+
+/*RM*/
+
+.rsection {
+  .rproject {
+    background: #3d4a39;
+  }
+
+  .rproject__text__card__title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 80px;
+    padding-top: 80px;
+  }
+
+  .rproject__text__card__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.2px;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .rproject__wrapper__input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    background-color: transparent;
+    color: #e0e0e0;
+    margin-top: 40px;
+  }
+
+  .rproject__text__card__span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .rproject__text__card__im {
+    margin-top: 27px;
+  }
+
+  .rproject__text__card__btn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    margin-top: 40px;
+    background: #ae7b3c;
+    color: #ffffff;
+    padding: 22px 87px;
+  }
+
+  .rproject__img {
+    margin-top: 60px;
+  }
+
+  .rproject__img__tablet {
+    display: none;
+  }
+
+  .rproject__img__1000px {
+    display: none;
+  }
+
+  .rwork__wrapper {
+    display: grid;
+  }
+  .rwork__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32.4px;
+    text-align: center;
+    color: #282b22;
+    margin-top: 80px;
+  }
+
+  .rwork__card {
+    margin-top: 50px;
+  }
+
+  .rwork__card__theme {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    margin-top: 25px;
+    color: #282b22;
+  }
+
+  .rwork__card__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.2px;
+    text-align: left;
+    margin-top: 15px;
+    color: #282b22;
+  }
+
+  @include mobile-large {
+    .rproject__img {
+      display: none;
+    }
+
+    .rproject__img__tablet {
+      display: block;
+      width: 320px;
+      height: 687px;
+    }
+    .rproject__wrapper {
+      display: flex;
+    }
+
+    .rwork__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+    }
+  }
+
+  @include tablet {
+    .rproject__img__tablet {
+      display: none;
+    }
+
+    .rproject__img__1000px {
+      display: block;
+    }
+  }
+
+  @include desktop {
+    .rproject__wrapper {
+      gap: 100px;
+    }
+    .rproject__img__1000px {
+      width: 800px;
+      height: 696px;
+    }
+    .rwork__wrapper {
+      display: grid;
+      gap: 80px;
+      grid-template-columns: repeat(4, 4fr);
+      margin-top: 50px;
+    }
+  }
+}
+
+.sectionimgf {
+  background: #fff;
+  .column-f {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+    .text-f {
+      font-family: Raleway;
+      font-size: 46px;
+      font-weight: 600;
+      margin-top: 170px;
+      margin-bottom: 40px;
+    }
+    .imgtwo-f {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      .imgcard-f {
+        padding: 0 10px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 30px;
+        .teo-textf {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          .future-textf {
+            font-family: Raleway;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            color: #282b22;
+          }
+          .etap-f {
+            font-family: Raleway;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+            text-align: left;
+            opacity: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.end-sectionff {
+  background: #f3f3f3;
+  width: 100%;
+  .rowdivff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 89px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .boshcard-textff {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 23px;
+      .h2ff {
+        font-family: Raleway;
+        font-size: 46px;
+        font-weight: 600;
+        line-height: 57.5px;
+        text-align: center;
+      }
+      .pff {
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: center;
+        opacity: 80%;
+      }
+      button {
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 16px;
+        text-align: left;
+        width: Fixed (260px) px;
+        height: Hug (60px) px;
+        top: 6651px;
+        left: 670px;
+        padding: 22px 56px 22px 56px;
+        gap: 10px;
+        opacity: 0px;
+        background-color: #ae7b3c;
+      }
+    }
+    .bosh-cardff {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
